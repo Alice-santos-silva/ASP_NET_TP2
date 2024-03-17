@@ -1,0 +1,16 @@
+﻿@page
+@model WebAppTP2.Pages.DefaultModel
+@{
+    ViewData["Title"] = "Página Padrão";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Nova página inicial.</p>
+
+<h2>Pessoas</h2>
+<ul>
+    @foreach (var pessoa in Model.Pessoas)
+    {
+        <li>Nome: @pessoa.Nome | Idade: @pessoa.Idade | CPF: @pessoa.Cpf</li>
+    }
+</ul>

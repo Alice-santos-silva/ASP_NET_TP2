@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WebAppTP2.props" />
+</Project>
